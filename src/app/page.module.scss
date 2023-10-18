@@ -73,6 +73,7 @@
 
 .container {
     width: 1700px;
+    height: 100%;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -86,7 +87,7 @@
     background-size: cover;
     background-position: center;
 
-    &::after {
+    &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -95,6 +96,75 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.95);
     }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.textInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    z-index: 99;
+}
+
+.infoTitle {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.infoName {
+    display: inline-block;
+    color: #4ce370;
+}
+
+.infoDescription {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.infoDecoration {
+    color: #4ce370;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+.socialsLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #cdcdcd;
+    color: #000;
+    border-radius: 50%;
+    z-index: 99;
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.socialsIcon * {
+    fill: #000;
 }
 
 .section2 {

@@ -53,7 +53,82 @@ export default function Home() {
                 </div>
             </header>
             <div className={styles.section1}>
-                <div className={styles.container}></div>
+                <div className={styles.container}>
+                    <div className={styles.info}>
+                        <div className={styles.textInfo}>
+                            <div className={styles.infoTitle}>
+                                <span>Hi, I am&nbsp;</span>
+                                <h1 className={styles.infoName}>Michael</h1>
+                            </div>
+                            <div className={styles.infoDescription}>
+                                <span>A dedicated&nbsp;</span>
+                                <span className={styles.infoDecoration}>
+                                    Frontend Developer&nbsp;
+                                </span>
+                                <span>
+                                    who likes to transform interesting ideas
+                                    <br />
+                                    into stunning experiences. Let's build
+                                    something amazing!
+                                </span>
+                            </div>
+                        </div>
+                        <div className={styles.socials}>
+                            <a
+                                className={styles.socialsLink}
+                                href="https://github.com/michaelspnv"
+                                target="_blank"
+                            >
+                                <Image
+                                    className={styles.socialsIcon}
+                                    src="/github.svg"
+                                    width={30}
+                                    height={30}
+                                    alt="github icon"
+                                />
+                            </a>
+                            <a
+                                className={styles.socialsLink}
+                                href="mailto:michaelsuponev@gmail.com"
+                                target="_blank"
+                            >
+                                <Image
+                                    className={styles.socialsIcon}
+                                    src="/gmail.svg"
+                                    width={30}
+                                    height={30}
+                                    alt="gmail icon"
+                                />
+                            </a>
+                            <a
+                                className={styles.socialsLink}
+                                href="https://t.me/mshkspnv"
+                                target="_blank"
+                            >
+                                <Image
+                                    className={styles.socialsIcon}
+                                    src="/telegram.svg"
+                                    width={30}
+                                    height={30}
+                                    alt="telegram icon"
+                                />
+                            </a>
+                            <a
+                                className={styles.socialsLink}
+                                href="https://vk.com/mshkspnv"
+                                target="_blank"
+                            >
+                                <Image
+                                    className={styles.socialsIcon}
+                                    src="/vk.svg"
+                                    width={30}
+                                    height={30}
+                                    alt="vk icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className={styles.section2}>
                 <div className={styles.container}></div>
