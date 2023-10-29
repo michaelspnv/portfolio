@@ -1,0 +1,1 @@
+export { TechBlockItem } from "./TechBlockItem"

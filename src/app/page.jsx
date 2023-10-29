@@ -1,23 +1,29 @@
 import classNames from "classnames/bind"
-import styles from "./page.module.scss"
 import Link from "next/link"
 import Image from "next/image"
+import { Info } from "./components/Info"
+import { Title } from "./components/Title"
+import { MultiLine } from "./components/MultiLine"
+import { TechBlock } from "./components/TechBlock"
+import { techBlocks } from "./utils/content"
 import { shantell } from "./utils/fonts"
+import styles from "./page.module.scss"
 
 const cx = classNames.bind(styles)
 
 export default function Home() {
-    const logoClassName = cx(["logoLink", shantell.className])
+    const logoClassName = cx(["logoLink", shantell.variable])
 
     return (
         <>
             <header className={styles.header}>
                 <div className={styles.container}>
                     <div className={styles.menuWrapper}>
-                        <Link className={logoClassName} href="/">
-                            <span className={styles.logo}>MS</span>
-                            <span className={styles.logoDecoration}>.</span>
-                        </Link>
+                        <MultiLine
+                            firstSubline="MS"
+                            secondSubline="."
+                            className={logoClassName}
+                        />
                         <div className={styles.menuContent}>
                             <div className={styles.menu}>
                                 <Link className={styles.link} href="#home">
@@ -56,14 +62,15 @@ export default function Home() {
                 <div className={styles.container}>
                     <div className={styles.info}>
                         <div className={styles.textInfo}>
-                            <div className={styles.infoTitle}>
-                                <span>Hi, I am&nbsp;</span>
-                                <h1 className={styles.infoName}>Michael</h1>
-                            </div>
+                            <MultiLine
+                                firstSubline="Hi, I am"
+                                secondSubline="Michael"
+                                className="subline--large"
+                            />
                             <div className={styles.infoDescription}>
                                 <span>A dedicated&nbsp;</span>
                                 <span className={styles.infoDecoration}>
-                                    Frontend Developer&nbsp;
+                                    Web Developer&nbsp;
                                 </span>
                                 <span>
                                     who likes to transform interesting ideas
@@ -131,7 +138,26 @@ export default function Home() {
                 </div>
             </div>
             <div className={styles.section2}>
-                <div className={styles.container}></div>
+                <div className={styles.container}>
+                    <Info>
+                        <Title content="Technologies" />
+                        <MultiLine
+                            firstSubline="What"
+                            secondSubline="I use"
+                            thirdSubline="."
+                        />
+                    </Info>
+                    <div className={styles.techGrid}>
+                        {techBlocks.map((techBlock) => (
+                            <TechBlock
+                                key={techBlock.id}
+                                title={techBlock.title}
+                                mainImageSrc={techBlock.mainImageSrc}
+                                content={techBlock.content}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
         </>
     )
