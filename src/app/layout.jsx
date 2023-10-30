@@ -1,6 +1,7 @@
 import "./scss/reset.css"
 import "./scss/globals.css"
 import { montserrat } from "./utils/fonts"
+import { Header } from "./components/Header"
 
 export const metadata = {
     title: "Michael Sup",
@@ -10,7 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={montserrat.className}>{children}</body>
+            <body className={montserrat.className}>
+                <Header />
+                {children}
+            </body>
         </html>
     )
 }

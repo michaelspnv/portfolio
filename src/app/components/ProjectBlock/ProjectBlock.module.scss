@@ -1,0 +1,59 @@
+.wrapper {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid #444;
+    border-radius: 15px;
+    padding: 20px;
+    transition: border 0.25s ease;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid rgba(76, 227, 112, 0.4);
+    }
+}
+
+.imageWrapper {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d2c15;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+.tagText {
+    font-size: 12px;
+    color: #4ce370;
+}
+
+.info {
+    width: 100%;
+}
+
+.title,
+.description {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}

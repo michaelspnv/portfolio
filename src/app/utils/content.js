@@ -34,3 +34,64 @@ export const techBlocks = [
         ],
     },
 ]
+
+export const projects = [
+    {
+        id: 1,
+        imageSrc: "/bg.jpg",
+        tags: ["1", "2", "3"],
+        title: "test1",
+        description: "React Project",
+    },
+    {
+        id: 2,
+        imageSrc: "/bg.jpg",
+        tags: ["1", "2", "3"],
+        title: "test2",
+        description: "React Project",
+    },
+    {
+        id: 3,
+        imageSrc: "/bg.jpg",
+        tags: [
+            "Next JS",
+            "React",
+            "Redux Toolkit",
+            "Redux Thunk",
+            "TypeScript",
+            "MySQL",
+        ],
+        title: "Blog website",
+        description:
+            "Blog website with authorization and personal accounts using NodeJS and MySQL",
+    },
+    {
+        id: 4,
+        imageSrc: "/bg.jpg",
+        tags: ["1", "2", "3"],
+        title: "test4",
+        description: "React Project",
+    },
+    {
+        id: 5,
+        imageSrc: "/bg.jpg",
+        tags: ["1", "2", "3"],
+        title: "test5",
+        description: "React Project",
+    },
+    {
+        id: 6,
+        imageSrc: "/bg.jpg",
+        tags: [
+            "Next JS",
+            "React",
+            "Redux Toolkit",
+            "Redux Thunk",
+            "TypeScript",
+            "MySQL",
+        ],
+        title: "Blog website",
+        description:
+            "Blog website with authorization and personal accounts using NodeJS and MySQL",
+    },
+]

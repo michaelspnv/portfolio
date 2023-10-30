@@ -1,63 +1,17 @@
-import classNames from "classnames/bind"
-import Link from "next/link"
 import Image from "next/image"
 import { Info } from "./components/Info"
 import { Title } from "./components/Title"
 import { MultiLine } from "./components/MultiLine"
 import { TechBlock } from "./components/TechBlock"
-import { techBlocks } from "./utils/content"
-import { shantell } from "./utils/fonts"
+import { ProjectBlock } from "./components/ProjectBlock"
+import { Paragraph } from "./components/Paragraph"
+import { Button } from "./components/Button"
+import { techBlocks, projects } from "./utils/content"
 import styles from "./page.module.scss"
 
-const cx = classNames.bind(styles)
-
 export default function Home() {
-    const logoClassName = cx(["logoLink", shantell.variable])
-
     return (
         <>
-            <header className={styles.header}>
-                <div className={styles.container}>
-                    <div className={styles.menuWrapper}>
-                        <MultiLine
-                            firstSubline="MS"
-                            secondSubline="."
-                            className={logoClassName}
-                        />
-                        <div className={styles.menuContent}>
-                            <div className={styles.menu}>
-                                <Link className={styles.link} href="#home">
-                                    <p className={styles.linkText}>Home</p>
-                                </Link>
-                                <Link className={styles.link} href="#about">
-                                    <p className={styles.linkText}>About me</p>
-                                </Link>
-                                <Link className={styles.link} href="#projects">
-                                    <p className={styles.linkText}>
-                                        Featured projects
-                                    </p>
-                                </Link>
-                                <Link className={styles.link} href="#contacts">
-                                    <p className={styles.linkText}>
-                                        Contact me
-                                    </p>
-                                </Link>
-                            </div>
-                            <Link className={styles.button} href="/">
-                                <span className={styles.buttonText}>
-                                    View Resume
-                                </span>
-                                <Image
-                                    src="/bag.svg"
-                                    width={20}
-                                    height={20}
-                                    alt=""
-                                />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </header>
             <div className={styles.section1}>
                 <div className={styles.container}>
                     <div className={styles.info}>
@@ -156,6 +110,79 @@ export default function Home() {
                                 content={techBlock.content}
                             />
                         ))}
+                    </div>
+                </div>
+            </div>
+            <div className={styles.section3}>
+                <div className={styles.container}>
+                    <Info>
+                        <Title content="Projects" />
+                        <MultiLine
+                            firstSubline="Featured"
+                            secondSubline="projects"
+                            thirdSubline="."
+                        />
+                    </Info>
+                    <div className={styles.projectsGrid}>
+                        {projects
+                            .slice()
+                            .reverse()
+                            .map((project) => (
+                                <ProjectBlock
+                                    key={project.id}
+                                    imageSrc={project.imageSrc}
+                                    tags={project.tags}
+                                    title={project.title}
+                                    description={project.description}
+                                />
+                            ))}
+                    </div>
+                </div>
+            </div>
+            <div className={styles.section4}>
+                <div className={styles.container}>
+                    <Info>
+                        <Title content="Bio" />
+                        <MultiLine
+                            firstSubline="About"
+                            secondSubline="me"
+                            thirdSubline="."
+                        />
+                    </Info>
+                    <div className={styles.about}>
+                        <div className={styles.secondCircle}>
+                            <div className={styles.firstCircle}>
+                                <div className={styles.imageWrapper}>
+                                    <p className={styles.emoji}>💻</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.aboutInfo}>
+                            <Paragraph>
+                                My name is Michael, I am a web developer who is
+                                constantly learning and following the latest
+                                novelties in this industry. I like to turn ideas
+                                into something real and beautiful.
+                            </Paragraph>
+                            <Paragraph>
+                                I've been studying web development on my own
+                                since I was 17. At the moment I am studying at
+                                the Russian Technical University in the
+                                specialty "Software Engineering".
+                            </Paragraph>
+                            <Paragraph>
+                                I work as a freelancer, develop custom websites
+                                and web applications.
+                            </Paragraph>
+                            <div className={styles.buttonWrapper}>
+                                <Button
+                                    content="View Guthub"
+                                    imageSrc="/github.svg"
+                                    alt="Guthub icon"
+                                    href="https://github.com/michaelspnv"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
