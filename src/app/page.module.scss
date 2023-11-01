@@ -5,6 +5,12 @@
     margin: 0 auto;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -118px;
+}
+
 .section1 {
     position: relative;
     width: 100%;
@@ -47,17 +53,6 @@
     z-index: 98;
 }
 
-.infoTitle {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 24px;
-}
-
-.infoName {
-    display: inline-block;
-    color: #4ce370;
-}
-
 .infoDescription {
     text-align: center;
     font-size: 24px;
@@ -94,7 +89,7 @@
 .section2 {
     width: 100%;
     background-color: #131313;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .techGrid {
@@ -105,7 +100,7 @@
 }
 
 .section3 {
-    background-color: #1d1d1d;
+    background-color: #0c0c0c;
     padding-bottom: 100px;
 }
 
@@ -118,8 +113,32 @@
 }
 
 .section4 {
+    position: relative;
     background-color: #131313;
     padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.decorationRight {
+    position: absolute;
+    top: 100px;
+    right: -125px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(76, 227, 112, 0.1);
+    filter: blur(70px);
+}
+
+.decorationLeft {
+    position: absolute;
+    top: 80%;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgba(76, 227, 112, 0.1);
+    filter: blur(100px);
 }
 
 .about {

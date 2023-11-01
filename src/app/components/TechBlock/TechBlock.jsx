@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { TechBlockItem } from "./TechBlockItem"
-import { techBlocks } from "@/utils/content"
 import styles from "./TechBlock.module.scss"
 
 const TechBlock = ({ title, mainImageSrc, content, alt = "", ...props }) => {
@@ -8,7 +7,6 @@ const TechBlock = ({ title, mainImageSrc, content, alt = "", ...props }) => {
         <div className={styles.wrapper}>
             <div className={styles.info}>
                 <Image
-                    className={styles.image}
                     src={mainImageSrc}
                     width={60}
                     height={60}

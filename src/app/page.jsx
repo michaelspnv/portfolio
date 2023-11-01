@@ -41,7 +41,6 @@ export default function Home() {
                                 target="_blank"
                             >
                                 <Image
-                                    className={styles.socialsIcon}
                                     src="/github.svg"
                                     width={30}
                                     height={30}
@@ -54,7 +53,6 @@ export default function Home() {
                                 target="_blank"
                             >
                                 <Image
-                                    className={styles.socialsIcon}
                                     src="/gmail.svg"
                                     width={30}
                                     height={30}
@@ -67,7 +65,6 @@ export default function Home() {
                                 target="_blank"
                             >
                                 <Image
-                                    className={styles.socialsIcon}
                                     src="/telegram.svg"
                                     width={30}
                                     height={30}
@@ -80,7 +77,6 @@ export default function Home() {
                                 target="_blank"
                             >
                                 <Image
-                                    className={styles.socialsIcon}
                                     src="/vk.svg"
                                     width={30}
                                     height={30}
@@ -91,6 +87,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <a className={styles.anchor} id="tech"></a>
             <div className={styles.section2}>
                 <div className={styles.container}>
                     <Info>
@@ -113,6 +110,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <a className={styles.anchor} id="projects"></a>
             <div className={styles.section3}>
                 <div className={styles.container}>
                     <Info>
@@ -139,7 +137,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <a className={styles.anchor} id="about"></a>
             <div className={styles.section4}>
+                <div className={styles.decorationRight}></div>
+                <div className={styles.decorationLeft}></div>
                 <div className={styles.container}>
                     <Info>
                         <Title content="Bio" />

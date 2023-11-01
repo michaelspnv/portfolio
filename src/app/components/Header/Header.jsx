@@ -27,29 +27,31 @@ const Header = () => {
         "header--scrolled": scrollY > 0,
     })
 
-    const logoClassName = cx(["logoLink", shantell.className])
+    const logoClassName = cx(["logoLinkContent", shantell.className])
 
     return (
         <header className={headerClassName}>
             <div className={styles.container}>
                 <div className={styles.menuWrapper}>
-                    <MultiLine
-                        firstSubline="MS"
-                        secondSubline="."
-                        className={logoClassName}
-                    />
+                    <Link className={styles.logoLink} href="/">
+                        <MultiLine
+                            firstSubline="MS"
+                            secondSubline="."
+                            className={logoClassName}
+                        />
+                    </Link>
                     <div className={styles.menuContent}>
                         <div className={styles.menu}>
-                            <Link className={styles.link} href="#home">
+                            <Link className={styles.link} href="/">
                                 <p className={styles.linkText}>Home</p>
                             </Link>
-                            <Link className={styles.link} href="#about">
+                            <Link className={styles.link} href="#tech">
                                 <p className={styles.linkText}>Tech</p>
                             </Link>
                             <Link className={styles.link} href="#projects">
                                 <p className={styles.linkText}>Projects</p>
                             </Link>
-                            <Link className={styles.link} href="#contacts">
+                            <Link className={styles.link} href="#about">
                                 <p className={styles.linkText}>About</p>
                             </Link>
                         </div>

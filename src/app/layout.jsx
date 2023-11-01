@@ -2,6 +2,7 @@ import "./scss/reset.css"
 import "./scss/globals.css"
 import { montserrat } from "./utils/fonts"
 import { Header } from "./components/Header"
+import { Footer } from "./components/Footer"
 
 export const metadata = {
     title: "Michael Sup",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
             <body className={montserrat.className}>
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     )
