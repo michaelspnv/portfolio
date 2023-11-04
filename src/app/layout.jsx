@@ -13,9 +13,12 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={montserrat.className}>
-                <Header />
-                {children}
-                <Footer />
+                <div id="app">
+                    <Header />
+                    {children}
+                    <Footer />
+                </div>
+                <div id="modals"></div>
             </body>
         </html>
     )

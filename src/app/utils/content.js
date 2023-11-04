@@ -41,6 +41,7 @@ export const projects = [
         imageSrc: "/bg.jpg",
         tags: ["1", "2", "3"],
         title: "test1",
+        thumbnail: "React Project",
         description: "React Project",
     },
     {
@@ -48,6 +49,7 @@ export const projects = [
         imageSrc: "/bg.jpg",
         tags: ["1", "2", "3"],
         title: "test2",
+        thumbnail: "React Project",
         description: "React Project",
     },
     {
@@ -62,14 +64,17 @@ export const projects = [
             "MySQL",
         ],
         title: "Blog website",
+        thumbnail:
+            "Blog website with authorization and personal accounts using NodeJS and MySQL.",
         description:
-            "Blog website with authorization and personal accounts using NodeJS and MySQL",
+            "Blog website with authorization and personal accounts using NodeJS and MySQL.",
     },
     {
         id: 4,
         imageSrc: "/bg.jpg",
         tags: ["1", "2", "3"],
         title: "test4",
+        thumbnail: "React Project",
         description: "React Project",
     },
     {
@@ -77,6 +82,7 @@ export const projects = [
         imageSrc: "/bg.jpg",
         tags: ["1", "2", "3"],
         title: "test5",
+        thumbnail: "React Project",
         description: "React Project",
     },
     {
@@ -91,7 +97,9 @@ export const projects = [
             "MySQL",
         ],
         title: "Blog website",
+        thumbnail:
+            "Blog website with authorization and personal accounts using NodeJS and MySQL.",
         description:
-            "Blog website with authorization and personal accounts using NodeJS and MySQL",
+            "Blog website with authorization and personal accounts using NodeJS and MySQL.",
     },
 ]

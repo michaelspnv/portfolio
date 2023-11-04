@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import classNames from "classnames/bind"
 import Link from "next/link"
-import Image from "next/image"
 import { MultiLine } from "../MultiLine"
 import { Button } from "../Button"
 import { shantell } from "@/utils/fonts"

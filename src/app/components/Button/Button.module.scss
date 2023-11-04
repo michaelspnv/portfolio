@@ -7,6 +7,7 @@
     background-color: #4ce370;
     color: #000;
     text-decoration: none;
+    text-align: center;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
@@ -14,4 +15,12 @@
 
 .buttonText {
     margin: 2px 10px 0 0;
+}
+
+@media (max-width: 1139px) {
+    .button {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
 }

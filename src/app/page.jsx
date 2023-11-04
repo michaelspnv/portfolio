@@ -131,6 +131,7 @@ export default function Home() {
                                     imageSrc={project.imageSrc}
                                     tags={project.tags}
                                     title={project.title}
+                                    thumbnail={project.thumbnail}
                                     description={project.description}
                                 />
                             ))}

@@ -1,0 +1,75 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    z-index: 98;
+}
+
+.wrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1d1d1d;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.closeButton {
+    position: absolute;
+    top: -65px;
+    right: -65px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.imageWrapper {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.techTitle {
+    color: #ccc;
+    padding: 8px 2px;
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d2c15;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+.tagText {
+    font-size: 14px;
+    color: #4ce370;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-transform: capitalize;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.description {
+    color: #fff;
+    line-height: 1.6;
+}
