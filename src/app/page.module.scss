@@ -16,7 +16,7 @@
     width: 100%;
     height: 100vh;
     min-height: 500px;
-    background-image: url("/bg.jpg");
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: var(--bg-color-first);
     }
 }
 
@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     font-size: 18px;
-    color: #fff;
+    color: var(--text-color);
     padding-top: 100px;
 }
 
@@ -88,7 +88,7 @@
 
 .section2 {
     width: 100%;
-    background-color: #131313;
+    background-color: var(--bg-color-second);
     padding-bottom: 150px;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .section3 {
-    background-color: #0c0c0c;
+    background-color: var(--bg-color-first);
     padding-bottom: 100px;
 }
 
@@ -114,7 +114,7 @@
 
 .section4 {
     position: relative;
-    background-color: #131313;
+    background-color: var(--bg-color-second);
     padding-bottom: 100px;
     overflow: hidden;
 }

@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.wrapper {
+    width: 65px;
+    height: 35px;
+    background-color: #424242;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: transform 0.25s ease;
+
+    &--on {
+        transform: translateX(30px);
+    }
+}

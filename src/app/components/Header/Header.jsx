@@ -5,6 +5,7 @@ import classNames from "classnames/bind"
 import Link from "next/link"
 import { MultiLine } from "../MultiLine"
 import { Button } from "../Button"
+import { ThemeSwitch } from "../ThemeSwitch"
 import { shantell } from "@/utils/fonts"
 import styles from "./Header.module.scss"
 
@@ -54,6 +55,7 @@ const Header = () => {
                                 <p className={styles.linkText}>About</p>
                             </Link>
                         </div>
+                        <ThemeSwitch />
                         <Button
                             content="View Guthub"
                             imageSrc="/github.svg"

@@ -7,7 +7,7 @@
 .subline {
     font-size: 34px;
     font-weight: bold;
-    color: #fff;
+    color: var(--text-color);
 
     &:first-child {
         padding-right: 10px;
