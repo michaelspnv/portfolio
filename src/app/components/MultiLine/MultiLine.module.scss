@@ -14,7 +14,7 @@
     }
 
     &:nth-child(2) {
-        color: #4ce370;
+        color: var(--additional-text-color);
     }
 
     &--large {

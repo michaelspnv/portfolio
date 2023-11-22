@@ -15,7 +15,7 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #1d1d1d;
+    background-color: var(--modal-bg);
     padding: 30px;
     border-radius: 10px;
     z-index: 99;
@@ -35,7 +35,7 @@
 }
 
 .techTitle {
-    color: #ccc;
+    color: var(--tech-title-color);
     padding: 8px 2px;
 }
 
@@ -50,14 +50,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0d2c15;
+    background-color: var(--tag-bg-color);
     border-radius: 10px;
     padding: 3px 8px;
 }
 
 .tagText {
     font-size: 14px;
-    color: #4ce370;
+    font-weight: var(--tag-font-weight);
+    color: var(--tag-text-color);
 }
 
 .title {
@@ -65,11 +66,11 @@
     font-weight: 600;
     line-height: 1.6;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--text-color);
     padding-top: 20px;
 }
 
 .description {
-    color: #fff;
+    color: var(--text-color);
     line-height: 1.6;
 }

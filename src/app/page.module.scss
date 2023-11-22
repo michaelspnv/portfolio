@@ -16,10 +16,9 @@
     width: 100%;
     height: 100vh;
     min-height: 500px;
-    background-image: var(--bg-image);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: var(--bg-image) no-repeat center/cover;
+    // background: #c9ffbf;
+    // background: linear-gradient(to right, #c9ffbf, #ffafbd);
 
     &::before {
         content: "";
@@ -60,7 +59,7 @@
 }
 
 .infoDecoration {
-    color: #4ce370;
+    color: var(--additional-text-color);
 }
 
 .socials {
@@ -115,11 +114,12 @@
 .section4 {
     position: relative;
     background-color: var(--bg-color-second);
-    padding-bottom: 100px;
+    padding-bottom: 215px;
     overflow: hidden;
 }
 
 .decorationRight {
+    display: var(--decoration-display);
     position: absolute;
     top: 100px;
     right: -125px;
@@ -128,9 +128,11 @@
     border-radius: 50%;
     background-color: rgba(76, 227, 112, 0.1);
     filter: blur(70px);
+    z-index: 90;
 }
 
 .decorationLeft {
+    display: var(--decoration-display);
     position: absolute;
     top: 80%;
     left: -200px;
@@ -139,12 +141,15 @@
     border-radius: 50%;
     background-color: rgba(76, 227, 112, 0.1);
     filter: blur(100px);
+    z-index: 90;
 }
 
 .about {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    align-items: flex-start;
+    margin-top: 30px;
 }
 
 .secondCircle {
@@ -153,8 +158,9 @@
     align-items: center;
     width: 650px;
     height: 650px;
-    border: 1px solid rgba(76, 227, 112, 0.05);
+    border: 1px solid var(--about-second-circle-color);
     border-radius: 50%;
+    z-index: 91;
 }
 
 .firstCircle {
@@ -163,8 +169,9 @@
     align-items: center;
     width: 580px;
     height: 580px;
-    border: 1px solid rgba(76, 227, 112, 0.25);
+    border: 1px solid var(--about-first-circle-color);
     border-radius: 50%;
+    z-index: 91;
 }
 
 .imageWrapper {
@@ -173,22 +180,43 @@
     align-items: center;
     width: 480px;
     height: 480px;
-    border: 1px solid rgba(76, 227, 112);
+    border: 1px solid var(--about-image-wrapper-color);
     border-radius: 50%;
     overflow: hidden;
+    z-index: 91;
 }
 
 .emoji {
     font-size: 320px;
     transform: translateY(-15px);
     pointer-events: none;
+    z-index: 91;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 91;
 }
 
 .aboutInfo {
-    width: 50%;
-    padding-top: 35px;
+    width: 800px;
+    padding: 35px 35px 0;
+    background-color: var(--about-text-block-bg-color);
+    border-radius: 35px;
+    box-shadow: 1px 1px 25px #000;
 }
 
 .buttonWrapper {
-    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    padding: 60px 0 0 17px;
+}
+
+.buttonShadow {
+    box-shadow: var(--about-button-box-shadow);
+    border-radius: 5px;
 }

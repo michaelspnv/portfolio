@@ -1,6 +1,8 @@
 .paragraph {
     font-size: 18px;
-    color: #ffffffbd;
+    font-weight: 500;
+    // color: #ffffffbd;
+    color: var(--text-color-p);
     line-height: 1.6;
     margin-bottom: 30px;
 }

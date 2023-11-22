@@ -7,6 +7,7 @@ const TechBlock = ({ title, mainImageSrc, content, alt = "", ...props }) => {
         <div className={styles.wrapper}>
             <div className={styles.info}>
                 <Image
+                    className={styles.image}
                     src={mainImageSrc}
                     width={60}
                     height={60}
@@ -22,6 +23,7 @@ const TechBlock = ({ title, mainImageSrc, content, alt = "", ...props }) => {
                         key={item.id}
                         imageSrc={item.imageSrc}
                         title={item.title}
+                        filter={item?.filter}
                     />
                 ))}
             </div>

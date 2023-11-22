@@ -4,14 +4,14 @@
     flex-direction: column;
     align-items: center;
     gap: 14px;
-    border: 1px solid #222;
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     padding: 20px;
     transition: border 0.25s ease;
     cursor: pointer;
 
     &:hover {
-        border: 1px solid rgba(76, 227, 112, 0.4);
+        border: 1px solid var(--border-color-hover);
     }
 }
 
@@ -31,14 +31,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0d2c15;
+    background-color: var(--tag-bg-color);
     border-radius: 10px;
     padding: 3px 8px;
 }
 
 .tagText {
     font-size: 12px;
-    color: #4ce370;
+    font-weight: var(--tag-font-weight);
+    color: var(--tag-text-color);
 }
 
 .info {
@@ -47,7 +48,7 @@
 
 .title,
 .thumbnail {
-    color: #fff;
+    color: var(--text-color);
     line-height: 1.6;
 }
 

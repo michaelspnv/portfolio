@@ -17,8 +17,18 @@ export const techBlocks = [
         mainImageSrc: "/tech-block-2.svg",
         content: [
             { id: 1, title: "NodeJS", imageSrc: "/nodejs.svg" },
-            { id: 2, title: "Next.JS", imageSrc: "/nextjs.svg" },
-            { id: 3, title: "Express", imageSrc: "/express.svg" },
+            {
+                id: 2,
+                title: "Next.JS",
+                imageSrc: "/nextjs.svg",
+                filter: true,
+            },
+            {
+                id: 3,
+                title: "Express",
+                imageSrc: "/express.svg",
+                filter: true,
+            },
             { id: 4, title: "MySQL", imageSrc: "/mysql.svg" },
             { id: 5, title: "MongoDB", imageSrc: "/mongodb.svg" },
             { id: 6, title: "Firebase", imageSrc: "/firebase.svg" },

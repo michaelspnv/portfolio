@@ -6,12 +6,18 @@
     justify-self: center;
     width: 100%;
     height: 150px;
-    background-color: #171717;
+    background-color: var(--tech-block-item-bg-color);
     border-radius: 1rem;
     padding: 20px 10px;
+    box-shadow: var(--tech-block-item-box-shadow);
+}
+
+.image {
+    filter: var(--svg-filter);
 }
 
 .title {
     line-height: 1.5rem;
-    color: #fff;
+    color: var(--tech-block-item-text-color);
+    font-weight: var(--tech-block-item-font-weight);
 }

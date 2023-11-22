@@ -159,30 +159,35 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.aboutInfo}>
-                            <Paragraph>
-                                My name is Michael, I am a web developer who is
-                                constantly learning and following the latest
-                                novelties in this industry. I like to turn ideas
-                                into something real and beautiful.
-                            </Paragraph>
-                            <Paragraph>
-                                I've been studying web development on my own
-                                since I was 17. At the moment I am studying at
-                                the Russian Technical University in the
-                                specialty "Software Engineering".
-                            </Paragraph>
-                            <Paragraph>
-                                I work as a freelancer, develop custom websites
-                                and web applications.
-                            </Paragraph>
+                        <div className={styles.infoWrapper}>
+                            <div className={styles.aboutInfo}>
+                                <Paragraph>
+                                    My name is Michael, I am a web developer who
+                                    is constantly learning and following the
+                                    latest novelties in this industry. I like to
+                                    turn ideas into something real and
+                                    beautiful.
+                                </Paragraph>
+                                <Paragraph>
+                                    I've been studying web development on my own
+                                    since I was 17. At the moment I study
+                                    Software Engineering at the Russian
+                                    Technical University.
+                                </Paragraph>
+                                <Paragraph>
+                                    I work as a freelancer, develop custom
+                                    websites and web applications.
+                                </Paragraph>
+                            </div>
                             <div className={styles.buttonWrapper}>
-                                <Button
-                                    content="View Guthub"
-                                    imageSrc="/github.svg"
-                                    alt="Guthub icon"
-                                    href="https://github.com/michaelspnv"
-                                />
+                                <div className={styles.buttonShadow}>
+                                    <Button
+                                        content="View Guthub"
+                                        imageSrc="/github.svg"
+                                        alt="Guthub icon"
+                                        href="https://github.com/michaelspnv"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
